@@ -17,10 +17,10 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/startOrderFragment">
+    app:startDestination="@id/startOrder">
 
     <fragment
-        android:id="@+id/startOrderFragment"
+        android:id="@+id/startOrder"
         android:name="com.example.lunchtray.ui.order.StartOrderFragment"
         android:label="StartOrderFragment" >
         <action
@@ -37,7 +37,7 @@
             app:destination="@id/sideMenuFragment" />
         <action
             android:id="@+id/action_entreeMenuFragment_to_startOrderFragment"
-            app:destination="@id/startOrderFragment" />
+            app:destination="@id/startOrder" />
     </fragment>
 
     <fragment
@@ -49,7 +49,7 @@
             app:destination="@id/accompanimentMenuFragment" />
         <action
             android:id="@+id/action_sideMenuFragment_to_startOrderFragment"
-            app:destination="@id/startOrderFragment" />
+            app:destination="@id/startOrder" />
     </fragment>
 
     <fragment
@@ -61,7 +61,7 @@
             app:destination="@id/checkoutFragment" />
         <action
             android:id="@+id/accompanimentMenuFragment_to_startOrderFragment"
-            app:destination="@id/startOrderFragment" />
+            app:destination="@id/startOrder" />
     </fragment>
 
     <fragment
@@ -70,7 +70,7 @@
         android:label="CheckoutFragment" >
         <action
             android:id="@+id/checkoutFragment_to_startOrderFragment"
-            app:destination="@id/startOrderFragment" />
+            app:destination="@id/startOrder" />
     </fragment>
 
 
